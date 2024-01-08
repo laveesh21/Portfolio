@@ -1,0 +1,134 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laveesh Tomar</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    
+        <div class="hero">
+    
+
+<!----------------------------------------------------------->
+            <nav class="nav-container">
+                <div class="logo">
+                    <p>Folio</p>
+                    <p>.</p>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+    
+            <div class="main-body">
+                <div class="header-text">
+                    <p>UI/UX Designer</p>
+                    <h1>Hi I'm <span>Laveesh</span> from India</h1>
+                </div>
+                <div class="image"></div>
+            </div>
+    
+<!---------------------------- ABOUT --------------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <div class="about-image"></div>
+                    </div>
+                    <div class="about-col-2">
+                        <h1>About me</h1>
+                        <p>Lorem ipsum dolor sit amet consectetu
+                            r adipisicing elit. Assumenda reprehen
+                            derit facere animi quidem autem ipsum 
+                            quae vitae est, asperiores porro numquam 
+                            ex deser unt, mollitia quibusdam odit eius
+                             blanditiis sint.rit facere animi quidem autem ipsum 
+                             quae vitae est, asperiores porro numquam 
+                             ex deser unt, mollitia 
+                           </p>
+                           <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                           </div>
+                           <div class="tab-contents active-tab" id="skill">
+                                <ul>
+                                    <li><span>UI/UX</span><br>Desigining Web/App interfaces</li>
+                                    <li><span>Web Development</span><br>Website Development</li>
+                                    <li><span>App Development</span><br>Building Android apps</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2018</span><br>Class IX</li>
+                                    <li><span>2021</span><br>Diploma from GPD Dehradun</li>
+                                    <li><span>2025</span><br>B.Tech from LPU Jalandhar</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2025-current</span><br>Amazon</li>
+                                    <li><span>2681</span><br>Apex Games Warlord</li>
+                                </ul>
+                            </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+
+<!-----------------------------------PORTFOLIO----------------------------------->
+
+<div class="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/trash00.jpg" alt="" width="400px" height="500">
+                <div class="layer">
+                    <h3>My Project 00</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur 
+                        adipisicing elit. Quae, impedit odio 
+                        nostrum consequuntur id voluptates?</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/trash01.jpg" alt="" width="400px" height="500">
+            </div>
+            <div class="work">
+                <img src="assets/trash00.jpg" alt="" width="400px" height="500">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------------------SCRIPT------------------------------------->
+        <script>
+            var tabLinks = document.getElementsByClassName("tab-links");
+            var tabContents = document.getElementsByClassName("tab-contents");
+        
+            function opentab(tabname) {
+                for (tabLink of tabLinks) {
+                    tabLink.classList.remove("active-link");
+                }
+                for (tabContent of tabContents) {
+                    tabContent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link")
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        
+    
+    </body>
+    </html>
+
+</body>
+</html>
