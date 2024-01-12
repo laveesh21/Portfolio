@@ -31,7 +31,7 @@
 }
 
 .logo :nth-child(2){
-    color: red;
+    color: #ff004f;
 }
 
 .nav-list ul li{
@@ -51,7 +51,7 @@
     content: '';
     width: 0;
     height: 3px;
-    background: rgb(207, 26, 20);
+    background: #ff004f;
     position: absolute;
     left: 0;
     bottom: -2px;
@@ -75,7 +75,7 @@
 }
 
 .header-text span{
-    color: rgb(230, 0, 0);
+    color: #ff004f;
 }
 
 .image{
@@ -86,7 +86,12 @@
     height: 800px;
 }
 
-
+.break{
+    height: 1px;
+    width: 100%;
+    margin: 10px 0;
+    background-color: white;
+}
 /*__________________________ABOUT__________________________________*/
 #about{
     padding: 5vw 10vw ;
@@ -100,10 +105,11 @@
 }
 
 .about-image{
-    background-image: url(assets/horizon.jpg);
+    background-image: url(assets/lvs00.jpg);
     background-size: cover;
     width: 25vw;
     height: 35vw;
+    border-radius: 10px;
 }
 
 .about-col-1{
@@ -139,7 +145,7 @@
 .tab-links::after{
     content: "";
     width: 0;
-    background-color: red;
+    background-color: #ff004f;
     height: 3px;
     left: 0;
     bottom: -8px;
@@ -157,7 +163,7 @@
 }
 
 .tab-contents ul li span{
-    color: rgb(219, 0, 0);
+    color: #ff004f;
 }
 
 .tab-contents{
@@ -196,6 +202,7 @@
     width: 100%;
     border-radius: 10px;
     display: block;
+    transition: transform 0.5s;
 }
 
 .work i{
@@ -204,7 +211,7 @@
 
 .layer{
     /* width: 100%; */
-    height: 100%;
+    height: 0;
     background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
     border-radius: 10px;
     position: absolute;
@@ -218,9 +225,131 @@
     font-size: 18px;
     text-align: center;
     padding: 0 30px;
+    transition:height 0.5s;
 }
 
 .layer h3{
     font-size: 30px;
     margin-bottom:30px; 
 }
+
+.layer a{
+    margin-top: 30px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 35px;
+    line-height: 60px;;
+    background-color: aliceblue;
+    width: 60px;
+    height:60px;
+    border-radius: 60px;
+    text-align: center;
+}   
+
+.work:hover img{
+    transform: scale(1.1);
+}
+
+.work:hover .layer{
+    height: 100%;
+    /* transform:ease-in 0.5s; */
+}
+
+.btn{
+    display:block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 2px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    transition:  background 0.5s;
+
+}
+
+.btn:hover{
+    background: #ff004f;
+}
+
+/* ________________________CONTACT___________________________ */
+.contact{
+    padding: 50px 200px; 
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left h1{
+    font-size: 50px;
+}
+
+.contact-left p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.social-icon{
+    margin-top: 20px;
+}
+
+.social-icon a{
+    text-decoration: none;
+    font-size: 33px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+.social-icon a:hover{
+    color: #ff004f;
+    transform: translate(-4px);
+}
+
+.btn2{
+    display: inline-block;
+    background: #ff004f;
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form .btn2{
+    font-size: 18px;
+}
+
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #262626;
+}
+
+.copyright i{
+    color: #ff004f;
+}
+
