@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import "./Navbar.css"; // Import the CSS file
 
 function Navbar() {
   return (
@@ -8,11 +9,11 @@ function Navbar() {
         <div className="flex items-center">
           <span className="text-3xl font-bold">Folio.io</span>
         </div>
-        <ul className="flex space-x-6">
-          <li><Link  to="/">Home</Link></li>
-          <li><Link  to="/about">About</Link></li>
-          <li><Link  to="/portfolio">Portfolio</Link></li>
-          <li><Link  to="/contact">Contact</Link></li>
+        <ul className="flex space-x-6 text-lg">
+          <li><NavLink exact to="/" activeClassName="active">Home</NavLink></li>
+          <li><NavLink to="/about" activeClassName="active">About</NavLink></li>
+          <li><NavLink to="/portfolio" activeClassName="active">Portfolio</NavLink></li>
+          <li><NavLink to="/contact" activeClassName="active">Contact</NavLink></li>
         </ul>
       </nav>
     </div>
