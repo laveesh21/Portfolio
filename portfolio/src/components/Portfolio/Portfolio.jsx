@@ -3,6 +3,11 @@ import ProjectCard from "./ProjectCard";
 import ProjectImg from "../../assets/luffy.jpg";
 import DesignImg from "../../assets/luffydes.png";
 import ApexImg from "../../assets/apexdev.png"  ;
+import ChatAppImg from "../../assets/chatapp.png"  ;
+import PortfolioImg from "../../assets/portfolio.png";
+
+
+
 
 const projects = [
   {
@@ -14,32 +19,24 @@ const projects = [
     img: ApexImg,
   },
   {
-    title: "Project",
-    desc: "This is sample Project",
+    title: "Chat Application",
+    desc: "This is a real-time chat application where users can chat with other users in real-time with the integration of LLM, which can chat when a user is not available.",
+    type: "website",
+    link: "No Link",
+    about: "https://github.com/laveesh21/Reat-Time-Chat-Application-",
+    img: ChatAppImg,
+  },
+  {
+    title: "My Portfolio",
+    desc: "This website, built using React, showcases my skills in both front-end and back-end development. Explore my projects, learn about my journey, and see how I turn ideas into robust, user-friendly web applications.",
     type: "website",
     link: "No Link",
     about: "",
-    img: ProjectImg,
+    img: PortfolioImg,
   },
   {
-    title: "Project",
-    desc: "This is sample Project",
-    type: "website",
-    link: "No Link",
-    about: "",
-    img: ProjectImg,
-  },
-  {
-    title: "Project2",
-    desc: "This is sample Project",
-    type: "design",
-    link: "No Link",
-    about: "",
-    img: DesignImg,
-  },
-  {
-    title: "Project2",
-    desc: "This is sample Project",
+    title: "Anime Webpage Design",
+    desc: "",
     type: "design",
     link: "No Link",
     about: "",
