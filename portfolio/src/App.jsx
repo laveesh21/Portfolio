@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Home/> */}
-      {/* <About/> */}
-      {/* <Portfolio/> */}
+      <Home/>
+      <About/>
+      <Portfolio/>
       <Contact/>
       <Routes>
         <Route path="/" component={Home} />
