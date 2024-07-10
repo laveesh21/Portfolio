@@ -1,9 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+
+.strip{
+  height: 100vh;
+  padding: 4px;
+  background-color: #09090B;
+  border: 1px solid #262626;
+}
+
+
+
+/*  GOOGLE FONT THEMES */
+
+.noto-sans-mid {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 .hind-siliguri-light {
   font-family: "Hind Siliguri", sans-serif;

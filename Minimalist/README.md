@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+# Minimalist Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimalist portfolio website built with ReactJS, inspired by [Josephz](https://www.josephz.me/).
 
-Currently, two official plugins are available:
+## Design
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- This website features three containers split equally in vertical orientation:
+  - **Left Container**: Shows a brief description about the user.
+  - **Middle Container**: Displays the project section.
+  - **Right Container**: Showcases achievements and skills.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Follow these instructions to set up and run the project locally.
 
-- Configure the top-level `parserOptions` property like this:
+### Prerequisites
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Make sure you have Node.js and npm installed on your machine. You can download them from [here](https://nodejs.org/).
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/minimalist-portfolio.git
+    cd minimalist-portfolio
+    ```
+
+2. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+3. Start the development server:
+    ```bash
+    npm start
+    ```
+
+The development server will be running at `http://localhost:3000`.
+
+### Project Structure
+
+- `src/`
+  - `components/`
+    - `LeftContainer.js`
+    - `MiddleContainer.js`
+    - `RightContainer.js`
+  - `pages/`
+    - `Home.js`
+  - `App.js`
+  - `App.css`
+  - `index.js`
+
+
